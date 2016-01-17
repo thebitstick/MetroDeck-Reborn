@@ -1,0 +1,521 @@
+@-moz-document url-prefix("https://tweetdeck.twitter.com/") {
+/*Setting Font*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+.is-inverted-dark
+{
+    font-family: "Open Sans", sans-serif;
+}
+
+body
+{
+    font-family: 'Open Sans' !important;
+    color: #999;
+    background: #1d1d1d !important;
+}
+
+.app-content
+{
+    background: #1d1d1d !important;
+}
+
+.column-drag-handle,
+.column-number
+{
+    display: none !important;
+}
+
+.column-options .button-tray
+{
+    background: #eeeeee !important;
+}
+
+a
+{
+    color: #FFFFFF;
+}
+
+.needs-scroll-bottom-offset.scroll-styled-h
+{
+    bottom: 0px !important;
+}
+
+.scroll-styled-h::-webkit-scrollbar
+{
+    height: 15px !important;
+}
+
+.scroll-styled-v::-webkit-scrollbar-thumb,
+.scroll-styled-h::-webkit-scrollbar-thumb
+{
+    background: #ccc !important;
+    border-radius: 0px !important;
+}
+
+.scroll-styled-v::-webkit-scrollbar-track,
+.scroll-styled-h::-webkit-scrollbar-track
+{
+    border-left: 0px m!important;
+}
+
+.app-columns-container
+{
+    background: #1d1d1d !important;
+}
+/* Sidebar */
+
+.app-header,
+.app-navigator,
+.column-nav-item,
+.app-search-fake,
+.column-nav-link,
+.app-nav-link,
+.app-nav-tab
+{
+    background: #1d1d1d !important;
+    color: #FFFFFF !important;
+}
+
+.app-search-fake
+{
+    box-shadow: none !important;
+}
+/* Compose */
+
+.compose
+{
+    background: #1d1d1d !important;
+    color: #FFFFFF !important;
+}
+
+.btn-compose
+{
+    background: #1d1d1d !important;
+    color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+.compose-header
+{
+    border-bottom: 0px !important;
+}
+
+.compose-account-selected
+{
+    background: #FFFFFF !important;
+    color: #555555 !important;
+    border-radius: 0 !important;
+}
+/* Timeline */
+
+.column-header,
+.column-header-temp
+{
+    background: #1d1d1d !important;
+    border-bottom: 0px !important;
+    color: #FFFFFF !important;
+    text-transform: lowercase !important;
+}
+
+.avatar
+{
+    border-radius: 0px !important;
+}
+
+.player-container
+{
+    border-radius: 0px !important;
+}
+/* Popups */
+
+.mdl,
+.mdl-content
+{
+    border-radius: 0px !important;
+    background: #1d1d1d !important;
+    color: #999 !important;
+    box-shadow: none !important;
+    border: 0px !important;
+}
+
+.mdl-column-med
+{
+    background: #1d1d1d !important;
+}
+
+.mdl-header-title
+{
+    color: #FFFFFF !important;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: normal !important;
+}
+
+.prf-meta,
+.social-proof-container,
+.js-profile-columns,
+.prf .lst-profile span,
+.prf-stats a,
+.prf .lst-profile i
+{
+    background: #FFFFFF !important;
+    color: #262626 !important;
+}
+/* Accounts */
+
+.js-account-manager-container
+{
+    background: #1d1d1d !important;
+    color: #FFFFFF !important;
+}
+
+.js-account-manager-container .drawer-header
+{
+    border-bottom: 0px !important;
+}
+
+.js-account-manager-container .account-link,
+.js-account-manager-container .txt-r-dark-gray,
+.js-account-manager-container .txt-r-text-link,
+.js-account-manager-container .link-complex-target,
+.js-account-manager-container .obj-left .icon,
+.js-account-manager-container .drawer-header .icon,
+.js-column-nav-menu-item .txt-sub-antialiased,
+.column-nav-link:after
+{
+    color: #FFFFFF !important;
+}
+
+.js-account-manager-container .account-row-separator-b:after,
+.js-account-manager-container .drawer-header:after
+{
+    background: #1d1d1d !important;
+}
+
+a[data-action='setAccountSafeguard'] .nbfc p
+{
+    margin-left: 30px !important;
+}
+/* Misc */
+
+input[type=text]
+{
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding: .3125rem !important;
+    border-radius: 0px !important;
+    color: #262626 !important;
+}
+
+select
+{
+    padding: .3125rem !important;
+    border-radius: 0px !important;
+}
+
+input[type=text]:focus,
+select:focus
+{
+    box-shadow: none !important;
+}
+
+.more-tweets-btn
+{
+    background: #1d1d1d !important;
+    color: #FFFFFF !important;
+    border-radius: none !important;
+}
+
+.caret
+{
+    display: none !important;
+}
+
+.divider-bar
+{
+    background: none !important;
+}
+
+.txt-r-medium-green
+{
+    color: #00a300 !important;
+}
+
+.txt-r-deep-yellow
+{
+    color: #ffc40d !important;
+}
+
+.icon-follow-color
+{
+    color: #00A9DA !important;
+}
+/*sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
+
+.js-dismiss:hover + .s-profile .prf-card-inner
+{
+    opacity: 0!important;
+    color: rgba(0, 0, 0, 0)!important;
+}
+
+.prf-card-inner
+{
+    transition: 1s;
+}
+
+.is-narrow-columns .app-columns
+{
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+.icon
+{
+    background: transparent;
+}
+
+.is-narrow-columns .column
+{
+    width: 293px;
+    margin-right: 1px;
+}
+
+.is-narrow-columns .column
+{
+    margin-right: 1px;
+}
+
+.column-title-back .icon
+{
+    top: 50%;
+}
+
+.js-compose-text,
+.compose-text-container
+{
+    font-size: 15px;
+    background: #252525;
+    color: #d1d1d1;
+}
+/* Avatars */
+
+.avatar,
+.compose-account-img,
+.size48,
+.js-account-item,
+.tweet-avatar
+{
+    border-radius: 100px;
+    transition: transform 0.1s ease-out;
+    box-shadow: 2px 2px 2px #2a2a2a;
+}
+
+.avatar:hover,
+.compose-account-img:hover,
+.size48:hover,
+.js-account-item:hover
+{
+    transform: scale(1.1, 1.1);
+}
+
+.avatar:active,
+.compose-account-img:active,
+.size48:active,
+.js-account-item:active
+{
+    transform: scale(0.9, 0.9);
+}
+
+.s-profile,
+.prf
+{
+    border-radius: 0px;
+}
+/* Detail view */
+
+.detail-view-inline
+{
+    background: #222226;
+    border: none;
+}
+
+.js-tweet-detail
+{
+    border: none;
+}
+/*WAIT*/
+
+.prf-img
+{
+    background: transparent;
+}
+
+#open-modal > div > div > div
+{
+    color: #aaa;
+}
+
+.drawer-content
+{
+    background: #212121;
+}
+
+.js-account-manager-container .drawer-header
+{
+    background: #212121;
+    color: #d1d1d1;
+}
+
+.js-popover-content .txt-base-small
+{
+    color: #212121;
+}
+
+.is-inverted-dark .account-link
+{
+    color: #FFF;
+}
+
+.js-item-launch .btn
+{
+    background: #212121;
+    color: #d1d1d1;
+    border: none;
+}
+
+.sprite-drag
+{
+    opacity: 0;
+}
+
+.cmp-replyto,
+.cmp-replyto .fullname
+{
+    color: #d1d1d1;
+    background: #1d1d1d;
+    border: none;
+}
+
+.js-inline-reply
+{
+    background: #252525;
+}
+
+.compose-title-text
+{
+    text-transform: lowercase !important;
+}
+
+.list-item
+{
+    color: #d1d1d1;
+}
+
+.column-options .button-tray
+{
+    background: #212121 !important;
+}
+
+.js-search-results-header .icon,
+.js-typeahead-recent-search-list .icon,
+.js-inreply .fullname
+{
+    color: #FFF;
+}
+
+.list-item-button
+{
+    background: #212121;
+}
+
+.js-popover-content .txt-base-small
+{
+    color: #DADADA;
+}
+
+.column-background-fill
+{
+    background: #222222;
+}
+
+.js-popover
+{
+    border: none !important;
+}
+
+.mdl-header
+{
+    color: #E6E6E6;
+}
+
+.app-header.is-condensed .app-nav-link .icon-arrow-r-double
+{
+    display: none;
+}
+
+.app-title
+{
+    background: #1d1d1d;
+}
+
+.control-group,
+.global-settings,
+.mdl-col-settings
+{
+    background: #1d1d1d;
+    color: #d1d1d1;
+}
+/* Tweets */
+
+.stream-item
+{
+    font-size: 14px;
+    background: #252525;
+    box-shadow: 1px 1px 2px #111;
+    margin: 5px;
+    margin-bottom: 3px;
+    border: none;
+    color: #fff;
+    transition: background 0.1s ease-out;
+}
+
+.link-complex,
+.url-ext
+{
+    color: #00BCD4;
+    transition: color 0.1s ease-out;
+}
+
+.fullname
+{
+    color: #e2e2e2;
+}
+
+.link-complex:hover,
+.url-ext:hover
+{
+    color: #4DD0E1;
+}
+
+.username
+{
+    color: #dadada;
+}
+
+.account-link:hover
+{
+    color: #fff;
+}
+
+.stream-item:hover
+{
+    background: #383838;
+}
+/* Actually, fuck the scrollbar. This was just made to look pretty anyways */
+
+.scroll-styled-v::-webkit-scrollbar
+{
+    width: 6px;
+}
+}
