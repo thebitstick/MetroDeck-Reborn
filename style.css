@@ -20,7 +20,10 @@ body
 }
 
 .column-drag-handle,
-.column-number
+.column-number,
+.column-type-icon,
+.caret,
+.app-header.is-condensed .app-nav-link .icon-arrow-r-double
 {
     display: none !important;
 }
@@ -55,7 +58,7 @@ a
 .scroll-styled-v::-webkit-scrollbar-track,
 .scroll-styled-h::-webkit-scrollbar-track
 {
-    border-left: 0px m!important;
+    border-left: 0px !important;
 }
 
 .app-columns-container
@@ -224,12 +227,6 @@ select:focus
 {
     background: #1d1d1d !important;
     color: #FFFFFF !important;
-    border-radius: none !important;
-}
-
-.caret
-{
-    display: none !important;
 }
 
 .divider-bar
@@ -266,29 +263,15 @@ select:focus
 
 .is-narrow-columns .app-columns
 {
-    padding-top: 1px;
-    padding-left: 1px;
-}
-
-.icon
-{
-    background: transparent;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
 .is-narrow-columns .column
 {
-    width: 293px;
-    margin-right: 1px;
-}
-
-.is-narrow-columns .column
-{
-    margin-right: 1px;
-}
-
-.column-title-back .icon
-{
-    top: 50%;
+    width: 296px;
+    margin-right: -3px;
+    border: none;
 }
 
 .js-compose-text,
@@ -306,9 +289,9 @@ select:focus
 .js-account-item,
 .tweet-avatar
 {
-    border-radius: 100px;
     transition: transform 0.1s ease-out;
-    box-shadow: 2px 2px 2px #2a2a2a;
+    box-shadow: 2px 2px 50px #2a2a2a;
+    border-radius: 50% !important;
 }
 
 .avatar:hover,
@@ -449,11 +432,6 @@ select:focus
     color: #E6E6E6;
 }
 
-.app-header.is-condensed .app-nav-link .icon-arrow-r-double
-{
-    display: none;
-}
-
 .app-title
 {
     background: #1d1d1d;
@@ -465,6 +443,19 @@ select:focus
 {
     background: #1d1d1d;
     color: #d1d1d1;
+}
+
+.list-link,
+.list-twitter-list,
+.list-subtitle,
+.list-account,
+.list-listmember,
+.list-account,
+.list-listaccount,
+.list-subtitle,
+.list-filter
+{
+    color: #EAEAEA;
 }
 /* Tweets */
 
@@ -512,10 +503,55 @@ select:focus
 {
     background: #383838;
 }
+
+.with-column-divider-bottom
+{
+    background: #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+}
 /* Actually, fuck the scrollbar. This was just made to look pretty anyways */
 
 .scroll-styled-v::-webkit-scrollbar
 {
-    width: 6px;
+    width: 6px !important;
+}
+
+.scroll-styled-h::-webkit-scrollbar
+{
+    height: 5px !important;
+}
+/* Column Header Condensing; this was originally written by pixeldesu */
+
+.js-column-header
+{
+    height: 30px;
+    line-height: 30px;
+}
+
+.column-header
+{
+    height: 30px;
+    line-height: 30px;
+}
+
+.js-tweet-results .column-header
+{
+    height: 50px;
+    line-height: 50px;
+}
+
+.column-drag-handle
+{
+    height: 15px;
+}
+
+.column-content
+{
+    top: 30px;
+}
+
+.column-title-back .icon
+{
+    top: 50%;
 }
 }
