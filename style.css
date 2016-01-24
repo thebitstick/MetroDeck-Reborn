@@ -19,7 +19,6 @@ body
     background: #1d1d1d !important;
 }
 
-.column-drag-handle,
 .column-number,
 .column-type-icon,
 .caret,
@@ -269,7 +268,7 @@ select:focus
 
 .is-narrow-columns .column
 {
-    width: 296px;
+    width: 256px;
     margin-right: -3px;
     border: none;
 }
@@ -290,7 +289,6 @@ select:focus
 .tweet-avatar
 {
     transition: transform 0.1s ease-out;
-    box-shadow: 2px 2px 50px #2a2a2a;
     border-radius: 50% !important;
 }
 
@@ -328,6 +326,22 @@ select:focus
     border: none;
 }
 /*WAIT*/
+
+.app-title,
+.avatar.size36
+{
+    display: none;
+}
+
+.app-navigator
+{
+    bottom: 0px;
+}
+
+.js-inline-reply .pull-left
+{
+    margin-top: -30px;
+}
 
 .prf-img
 {
@@ -461,14 +475,13 @@ select:focus
 
 .stream-item
 {
-    font-size: 14px;
-    background: #252525;
-    box-shadow: 1px 1px 2px #111;
-    margin: 5px;
-    margin-bottom: 3px;
-    border: none;
+    font-size: 13px;
     color: #fff;
-    transition: background 0.1s ease-out;
+    border: none;
+    box-shadow: 1px 1px 2px #111;
+    margin: 3px;
+    margin-bottom: 6px;
+    transition: background 0.4s ease-out;
 }
 
 .link-complex,
@@ -501,7 +514,7 @@ select:focus
 
 .stream-item:hover
 {
-    background: #383838;
+    background: #303030;
 }
 
 .with-column-divider-bottom
@@ -511,14 +524,14 @@ select:focus
 }
 /* Actually, fuck the scrollbar. This was just made to look pretty anyways */
 
-.scroll-styled-v::-webkit-scrollbar
+*::-webkit-scrollbar
 {
-    width: 6px !important;
+    width: 5.5px !important;
 }
 
 .scroll-styled-h::-webkit-scrollbar
 {
-    height: 5px !important;
+    display: none;
 }
 /* Column Header Condensing; this was originally written by pixeldesu */
 
